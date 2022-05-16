@@ -27,19 +27,11 @@ contract APIEarthquakeMag is ChainlinkClient {
 
     string public concat;
     
-    /**
-     * Network: Kovan
-     * Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8 (Chainlink Devrel   
-     * Node)
-     * Job ID: d5270d1c311941d0b08bead21fea7747
-     * Fee: 0.1 LINK
-     */
-
     constructor() {
         setPublicChainlinkToken();
-        oracle = 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8;
-        jobId = "d5270d1c311941d0b08bead21fea7747";
-        fee = 0.1 * 10 ** 18; // (Varies by network and job)
+        oracle = 0x9904415Db0B70fDd242b6Fe835d2bBc155466e8e;
+        jobId = "69cf5186b05a4497be74f85236e8ba34";
+        fee = 0.0 * 10 ** 18; // (Varies by network and job)
     }
 
     function inputLocation(
